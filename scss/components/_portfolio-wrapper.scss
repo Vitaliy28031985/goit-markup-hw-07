@@ -1,8 +1,8 @@
 .wrapper {
-    position: relative;
-    overflow: hidden;
+position: relative;
+overflow: hidden;
 }
-.wrapper__box {
+    .wrapper__box {
     position: absolute;
     top: 0;
     left: 0px;
@@ -12,14 +12,14 @@
     background-color: var(--portfolio-wrapper-box);
     transition: transform 250ms  cubic-bezier(0.4, 0, 0.2, 1);
 }
-.wrapper__text {
-font-weight: 400;
-width: 322px;
-height: 168px;
-font-size: 18px;
-line-height: 28px;
-letter-spacing: 1.5;
-margin-top: 63px;
-margin-left: 24px;
-color: var(--logo-text-color);
-}
+   .wrapper__text {
+   font-weight: 400;
+   width: 322px;
+   height: 168px;
+   font-size: 18px;
+   line-height: 28px;
+   letter-spacing: 1.5;
+   margin-top: 63px;
+   margin-left: 24px;
+   color: var(--logo-text-color);
+   }
