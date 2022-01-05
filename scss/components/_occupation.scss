@@ -1,22 +1,22 @@
 .occupation {
-    position: relative;
+position: relative;
 padding-bottom: 94px;
 }
-.occupation__text {
-color: var(--title-text-color);
-font-size: 36px;
-line-height: 1.2;
-text-align: center;
-margin-bottom: 50px;
-margin-top: 0px;
-}
-.occupation__list {
-margin-left: -30px;
-justify-content:center;
-display: flex;
-background-color: var(--occupation-list);
-}
-.occupation__card {
+   .occupation__text {
+   color: var(--title-text-color);
+   font-size: 36px;
+   line-height: 1.2;
+   text-align: center;
+   margin-bottom: 50px;
+   margin-top: 0px;
+   }
+   .occupation__list {
+   margin-left: -30px;
+   justify-content:center;
+   display: flex;
+   background-color: var(--occupation-list);
+   }
+   .occupation__card {
     position: absolute;
     bottom: 94px;
     width: 370px;
@@ -33,7 +33,7 @@ background-color: var(--occupation-list);
     letter-spacing: 1.2;
     text-transform: uppercase;
     }
-    .occupation--margin {
+        .occupation--margin {
         margin-left: 30px;
         width: 370px;
-    }
+        }

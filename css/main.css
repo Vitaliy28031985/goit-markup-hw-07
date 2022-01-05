@@ -1,4 +1,5 @@
 :root {
+  --body-background-color:#E5E5E5;
   --primery-text-color: #757575;
   --accent-color: #2196F3;
   --title-text-color: #212121;
@@ -33,11 +34,15 @@
   --portfolio-color-two: rgba(0, 0, 0, 0.16);
   --portfolio-wrapper-box: rgba(33, 150, 243, 0.9);
   --social-color-footer: rgba(255, 255, 255, 0.1);
+  --font-family-logo: 'Raleway';
+  --font-famil-primery: 'Roboto', 'Segoe UI', 'Oxygen',
+    'Ubuntu', 'Cantarell', 'Open Sans', 'Helvetica Neue', 
+    'sans-serif';
 }
 
 body {
-  font-family: 'Roboto', 'Segoe UI', 'Oxygen', 'Ubuntu', 'Cantarell', 'Open Sans', 'Helvetica Neue',  'sans-serif';
-  background-color: #E5E5E5;
+  font-family: var(--font-famil-primery);
+  background-color: var(--body-background-color);
 }
 
 a {
@@ -99,7 +104,7 @@ img {
 }
 
 .logo {
-  font-family: 'Raleway';
+  font-family: var(--font-family-logo);
   font-size: 26px;
   line-height: 1.2;
   text-align: left;
@@ -133,11 +138,7 @@ img {
   transition: color 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 
-.site-nav__link:hover {
-  color: var(--accent-color);
-}
-
-.site-nav__link:focus {
+.site-nav__link:hover, .site-nav__link:focus {
   color: var(--accent-color);
 }
 
@@ -198,11 +199,7 @@ img {
   transition: color 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 
-.contact__link:hover {
-  color: var(--accent-color);
-}
-
-.contact__link:focus {
+.contact__link:hover, .contact__link:focus {
   color: var(--accent-color);
 }
 
@@ -818,6 +815,8 @@ img {
 
 .backdrop__icon {
   position: absolute;
+  max-width: 11px;
+  max-height: 11px;
   left: 499px;
   top: 19px;
   pointer-events: none;
@@ -1008,12 +1007,10 @@ img {
   opacity: 0;
 }
 
-.form__button-box {
-  padding-left: 165px;
-  margin-top: 20px;
-}
-
 .form__button {
+  position: absolute;
+  left: 165px;
+  bottom: -10px;
   width: 200px;
   height: 50px;
   text-align: center;
@@ -1119,6 +1116,10 @@ img {
   transition: box-shadow 250ms cubic-bezier(0.4, 0, 0.2, 1), -webkit-box-shadow 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 
+.portfolio__element:nth-child(3n) {
+  margin-right: 0px;
+}
+
 .portfolio__element:hover, .portfolio__element:hover {
   -webkit-box-shadow: 0px 1px 1px var(--team-box-shadow-one), 0px 4px 4px var(--portfolio-color-one), 1px 4px 6px var(--portfolio-color-two);
           box-shadow: 0px 1px 1px var(--team-box-shadow-one), 0px 4px 4px var(--portfolio-color-one), 1px 4px 6px var(--portfolio-color-two);
@@ -1139,10 +1140,6 @@ img {
   -webkit-transform: translateY(0);
       -ms-transform: translateY(0);
           transform: translateY(0);
-}
-
-.portfolio__element:nth-child(3n) {
-  margin-right: 0px;
 }
 
 .portfolio__name {
