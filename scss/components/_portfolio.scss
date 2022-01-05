@@ -1,8 +1,8 @@
 .portfolio {
-padding-top: 94px;
-padding-bottom: 94px;
+    padding-top: 94px;
+    padding-bottom: 94px;
 }
-   .portfolio__contener {
+.portfolio__contener {
     display: flex;
     position: relative;
     flex-wrap: wrap;
@@ -13,28 +13,28 @@ padding-bottom: 94px;
      margin-right: 30px;
      margin-bottom: 30px;
      transition: box-shadow 250ms  cubic-bezier(0.4, 0, 0.2, 1);
-        &:nth-child(3n) {
-        margin-right: 0px;}
-        &:hover, &:hover {
+     &:hover, &:hover {
         box-shadow: 0px 1px 1px var(--team-box-shadow-one), 
         0px 4px 4px var(--portfolio-color-one), 
         1px 4px 6px var(--portfolio-color-two);} 
-        }    
-    .portfolio__link {
-    margin-left: 0px;
-    display: block;
+          .portfolio__element:nth-child(3n) {
+            margin-right: 0px;}}
+   .portfolio__link {
+       margin-left: 0px;
+       display: block;
        &:hover .wrapper__box {
-       transform: translateY(0);}
-       &:focus .wrapper__box {
-       transform: translateY(0);}}
-    .portfolio__name {
-    margin-bottom: 4px;
-    color: var(--title-text-color);
-    font-size: 18px;
-    line-height: 2;
-    text-align: left;
+        transform: translateY(0);
     }
-    .portfolio__project {
+    &:focus .wrapper__box {
+        transform: translateY(0);}}
+.portfolio__name {
+margin-bottom: 4px;
+color: var(--title-text-color);
+font-size: 18px;
+line-height: 2;
+text-align: left;
+}
+.portfolio__project {
     padding-top: 20px;
     padding-bottom: 20px;
     padding-left: 24px;
@@ -42,11 +42,11 @@ padding-bottom: 94px;
     border-bottom: 1px solid var(--border-card-portfolio);
     border-left: 1px solid var(--border-card-portfolio);
     border-right: 1px solid var(--border-card-portfolio);
-    }
-    .portfolio__typ {
-    color: var(--primery-text-color);
-    font-size: 16px;
-    line-height: 1.9;
-    text-align: left;
-    text-align: left;
-    }
+}
+.portfolio__typ {
+color: var(--primery-text-color);
+font-size: 16px;
+line-height: 1.9;
+text-align: left;
+text-align: left;
+}

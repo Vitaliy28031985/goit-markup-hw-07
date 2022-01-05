@@ -1,14 +1,14 @@
 .logo {
-font-family: var(--font-family-logo);
-font-size: 26px;
-line-height: 1.2;
-text-align: left;
-color: var(--accent-color);
+    font-family: 'Raleway';
+    font-size: 26px;
+    line-height: 1.2;
+    text-align: left;
+    color: var(--accent-color);
 }
 
-    .logo--colorcolor-black {
+.logo--colorcolor-black {
     color: var(--title-text-color);
     }
-    .logo--color-white {
-    color: var(--logo-text-color);
-    }
+.logo--color-white {
+color: var(--logo-text-color);
+}
