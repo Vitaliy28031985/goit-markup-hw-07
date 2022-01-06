@@ -798,18 +798,17 @@ img {
 }
 
 .backdrop__button {
-  position: absolute;
+  margin-left: 490px;
+  margin-top: 8px;
   width: 30px;
   height: 30px;
   -webkit-border-radius: 360px;
           border-radius: 360px;
   border: 1px solid var(--backdrop-color);
   background-color: var(--logo-text-color);
-  right: 9px;
-  top: 9px;
 }
 
-.backdrop__button:hover + .backdrop__icon, .backdrop__button:focus + .backdrop__icon {
+.backdrop__button:hover:nth-child(1n), .backdrop__button:focus:nth-child(1n) {
   fill: var(--accent-color);
 }
 
@@ -817,8 +816,8 @@ img {
   max-width: 11px;
   max-height: 11px;
   position: absolute;
-  left: 499px;
-  top: 19px;
+  left: 500px;
+  top: 18px;
   pointer-events: none;
   -webkit-transition: fill 250ms cubic-bezier(0.4, 0, 0.2, 1);
   -o-transition: fill 250ms cubic-bezier(0.4, 0, 0.2, 1);
@@ -830,7 +829,7 @@ img {
 }
 
 .form__text {
-  margin-top: 40px;
+  margin-top: 0px;
   margin-bottom: 30px;
   font-weight: 700;
   font-size: 20px;
@@ -1008,9 +1007,8 @@ img {
 }
 
 .form__button {
-  position: absolute;
-  bottom: 30px;
-  left: 165px;
+  margin-left: 164px;
+  margin-top: 20px;
   width: 200px;
   height: 50px;
   text-align: center;
