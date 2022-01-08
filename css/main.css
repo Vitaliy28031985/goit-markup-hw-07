@@ -798,8 +798,9 @@ img {
 }
 
 .backdrop__button {
-  margin-left: 490px;
-  margin-top: 8px;
+  position: absolute;
+  top: 8px;
+  left: 490px;
   width: 30px;
   height: 30px;
   -webkit-border-radius: 360px;
@@ -815,17 +816,10 @@ img {
 .backdrop__icon {
   max-width: 11px;
   max-height: 11px;
-  position: absolute;
-  left: 500px;
-  top: 18px;
-  pointer-events: none;
-  -webkit-transition: fill 250ms cubic-bezier(0.4, 0, 0.2, 1);
-  -o-transition: fill 250ms cubic-bezier(0.4, 0, 0.2, 1);
-  transition: fill 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 
 .form {
-  margin: 0px;
+  margin-top: 40px;
 }
 
 .form__text {
@@ -949,6 +943,7 @@ img {
 .form__checkbox-box {
   margin-top: 20px;
   padding-left: 54px;
+  margin-bottom: 20px;
 }
 
 .form__checkbox {
@@ -1007,8 +1002,8 @@ img {
 }
 
 .form__button {
-  margin-left: 164px;
-  margin-top: 20px;
+  display: block;
+  margin: auto;
   width: 200px;
   height: 50px;
   text-align: center;
